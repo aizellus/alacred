@@ -111,6 +111,11 @@ textarea {
   font-size: 0.95rem;
 }
 
+.topnav a.is-active {
+  color: var(--white);
+  font-weight: 800;
+}
+
 .nav-toggle {
   display: none;
   width: 48px;
@@ -170,6 +175,25 @@ textarea {
   gap: 36px;
   padding: 72px 0 48px;
   align-items: center;
+}
+
+.page-hero {
+  padding: 76px 0 18px;
+  max-width: 860px;
+}
+
+.page-hero h1 {
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  margin: 0;
+  font-family: "Fraunces", serif;
+  line-height: 0.98;
+}
+
+.page-hero__lede {
+  max-width: 58ch;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 .eyebrow {
@@ -313,7 +337,13 @@ textarea {
 .tier-card,
 .industry-card,
 .price-card,
-.standards article {
+.standards article,
+.feature-panel,
+.launch-card,
+.comparison-card,
+.pillar-card,
+.content-panel,
+.score-card {
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
@@ -327,6 +357,72 @@ textarea {
 .section-heading h2 {
   font-size: clamp(2.1rem, 4vw, 4rem);
   margin-bottom: 14px;
+}
+
+.feature-split,
+.comparison-grid,
+.pillars-grid,
+.two-column-panels,
+.launch-grid,
+.score-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.feature-split,
+.launch-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.comparison-grid,
+.two-column-panels {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pillars-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.score-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.feature-panel h3,
+.launch-card h3,
+.comparison-card h3,
+.pillar-card h3,
+.content-panel h3,
+.score-card strong {
+  margin-top: 0;
+}
+
+.comparison-card--accent,
+.score-card {
+  background: linear-gradient(180deg, rgba(29, 53, 87, 0.95), rgba(19, 36, 61, 0.96));
+  color: var(--white);
+}
+
+.comparison-card--accent ul,
+.score-card span {
+  color: rgba(255, 253, 247, 0.82);
+}
+
+.content-panel ul,
+.comparison-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ink-soft);
+}
+
+.score-card {
+  display: grid;
+  gap: 8px;
+}
+
+.score-card strong {
+  font-family: "Fraunces", serif;
+  font-size: 2.6rem;
 }
 
 .steps,
@@ -423,6 +519,20 @@ textarea {
   margin-top: 28px;
 }
 
+.brand-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.brand-notes span {
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 253, 247, 0.82);
+}
+
 .pricing-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -450,6 +560,13 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
 }
 
 .section--split {
@@ -575,7 +692,13 @@ textarea {
   .pricing-grid,
   .launch-banner,
   .section--split,
-  .section--grid .industry-layout {
+  .section--grid .industry-layout,
+  .feature-split,
+  .launch-grid,
+  .pillars-grid,
+  .comparison-grid,
+  .two-column-panels,
+  .score-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -626,7 +749,13 @@ textarea {
   .section--split,
   .section--grid .industry-layout,
   .apply-form,
-  .footer {
+  .footer,
+  .feature-split,
+  .launch-grid,
+  .pillars-grid,
+  .comparison-grid,
+  .two-column-panels,
+  .score-grid {
     grid-template-columns: 1fr;
   }
 
@@ -642,5 +771,9 @@ textarea {
 
   .hero h1 {
     max-width: 100%;
+  }
+
+  .page-hero {
+    padding-top: 36px;
   }
 }

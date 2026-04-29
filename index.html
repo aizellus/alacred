@@ -16,10 +16,10 @@
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body data-page="home">
     <div class="site-shell">
       <header class="topbar">
-        <a class="brand" href="#hero" aria-label="AlaCred home">
+        <a class="brand" href="./index.html" aria-label="AlaCred home">
           <span class="brand__seal">AC</span>
           <span class="brand__wording">
             <strong>AlaCred</strong>
@@ -31,17 +31,17 @@
           <span></span>
         </button>
         <nav class="topnav">
-          <a href="#how-it-works">How It Works</a>
-          <a href="#credentials">Credentials</a>
-          <a href="#standards">Standards</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#faq">FAQ</a>
-          <a class="button button--nav" href="#apply">Apply Now</a>
+          <a href="./about.html">About</a>
+          <a href="./credentials.html">Credentials</a>
+          <a href="./standards.html">Standards</a>
+          <a href="./industries.html">Industries</a>
+          <a href="./founding-50.html">Founding 50</a>
+          <a class="button button--nav" href="./apply.html">Apply Now</a>
         </nav>
       </header>
 
       <main>
-        <section class="hero" id="hero">
+        <section class="hero hero--home" id="hero">
           <div class="hero__copy reveal">
             <p class="eyebrow">Built for Alabama's reputation-driven businesses</p>
             <h1>Turn local credibility into a trust mark your customers can recognize instantly.</h1>
@@ -51,8 +51,8 @@
               trust through verification, recognition, and public-facing credibility assets.
             </p>
             <div class="hero__actions">
-              <a class="button" href="#apply">Apply for Founding Status</a>
-              <a class="button button--ghost" href="#standards">See the Standards</a>
+              <a class="button" href="./apply.html">Apply for Founding Status</a>
+              <a class="button button--ghost" href="./standards.html">See the Standards</a>
             </div>
             <ul class="hero__signals">
               <li>Public trust badge system</li>
@@ -106,14 +106,39 @@
           </article>
         </section>
 
-        <section class="section reveal" id="how-it-works">
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">What AlaCred Does</p>
+            <h2>A full trust system, not just a logo.</h2>
+            <p>
+              The strongest version of AlaCred is a layered system: a clear trust ladder, supporting
+              proof-point badges, a standards framework, and public-facing assets that businesses can
+              actually use in sales and marketing.
+            </p>
+          </div>
+          <div class="feature-split">
+            <article class="feature-panel">
+              <h3>Trust ladder</h3>
+              <p>Verified, Trusted, Accredited, and Gold Standard tiers that are easy for customers to understand.</p>
+              <a class="text-link" href="./credentials.html">Explore credential tiers</a>
+            </article>
+            <article class="feature-panel">
+              <h3>Standards framework</h3>
+              <p>Review categories built around transparency, customer experience, reliability, safety, community, and digital trust.</p>
+              <a class="text-link" href="./standards.html">See how review works</a>
+            </article>
+            <article class="feature-panel">
+              <h3>Best-fit verticals</h3>
+              <p>Home services, professional firms, hospitality, retail, childcare, senior support, and other trust-sensitive local businesses.</p>
+              <a class="text-link" href="./industries.html">View target industries</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--contrast reveal">
           <div class="section-heading">
             <p class="eyebrow">How It Works</p>
-            <h2>A simple ladder with real operational meaning.</h2>
-            <p>
-              AlaCred is designed as a trust stack: a flagship credential customers can understand in
-              seconds, backed by supporting proof points and category-specific standards.
-            </p>
+            <h2>A simple path from proof to public credibility.</h2>
           </div>
           <div class="steps">
             <article class="step-card">
@@ -128,132 +153,21 @@
             </article>
             <article class="step-card">
               <span>03</span>
-              <h3>Earn a visible credential</h3>
-              <p>Qualified businesses receive an AlaCred tier, digital trust assets, and a public-facing profile story.</p>
+              <h3>Earn visible recognition</h3>
+              <p>Qualified businesses receive a tier, trust assets, and a public-facing credibility story.</p>
             </article>
             <article class="step-card">
               <span>04</span>
               <h3>Use it everywhere</h3>
-              <p>Publish badges on your website, listings, social channels, sales material, and jobsite signage.</p>
+              <p>Publish badges, profile language, certificates, listing copy, and launch content across the web.</p>
             </article>
           </div>
         </section>
 
-        <section class="section section--contrast reveal" id="credentials">
+        <section class="section section--grid reveal">
           <div class="section-heading">
-            <p class="eyebrow">Credential Ladder</p>
-            <h2>Four tiers, one trust language.</h2>
-          </div>
-          <div class="tiers">
-            <article class="tier-card">
-              <p class="tier-card__level">Verified</p>
-              <h3>AlaCred Verified Business</h3>
-              <p>For businesses with clear identity, reachability, published information, and baseline operating proof.</p>
-              <ul>
-                <li>Real and reachable</li>
-                <li>Transparent public presence</li>
-                <li>Entry-level trust signal</li>
-              </ul>
-            </article>
-            <article class="tier-card">
-              <p class="tier-card__level">Trusted</p>
-              <h3>AlaCred Trusted Business</h3>
-              <p>For operators with stronger customer care, response habits, and consistent service practices.</p>
-              <ul>
-                <li>Documented reliability</li>
-                <li>Customer-first operations</li>
-                <li>Most marketable flagship tier</li>
-              </ul>
-            </article>
-            <article class="tier-card">
-              <p class="tier-card__level">Accredited</p>
-              <h3>AlaCred Accredited Local Business</h3>
-              <p>For businesses ready to show deeper operating discipline, stronger standards, and more complete evidence.</p>
-              <ul>
-                <li>Broader documentation review</li>
-                <li>Enhanced prestige and credibility</li>
-                <li>Built for growth-minded operators</li>
-              </ul>
-            </article>
-            <article class="tier-card tier-card--featured">
-              <p class="tier-card__level">Gold Standard</p>
-              <h3>Alabama Gold Standard Business</h3>
-              <p>Top-tier recognition for businesses that want a visible position as standout operators in their market.</p>
-              <ul>
-                <li>Highest review threshold</li>
-                <li>Prestige-led positioning</li>
-                <li>Premium public recognition</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section class="section reveal" id="standards">
-          <div class="section-heading">
-            <p class="eyebrow">Standards Framework</p>
-            <h2>Credibility backed by practical categories customers actually care about.</h2>
-            <p>
-              The review model is designed around visible proof, not vague claims. Every business is
-              evaluated against weighted trust categories that map to how customers judge confidence.
-            </p>
-          </div>
-          <div class="standards">
-            <article>
-              <h3>Trust and Transparency</h3>
-              <p>Published identity, service clarity, pricing approach, and complaint visibility.</p>
-            </article>
-            <article>
-              <h3>Customer Experience</h3>
-              <p>Lead response, appointment communication, follow-up, and resolution habits.</p>
-            </article>
-            <article>
-              <h3>Operational Reliability</h3>
-              <p>Scheduling discipline, quality checks, staff accountability, and documented process.</p>
-            </article>
-            <article>
-              <h3>Safety and Preparedness</h3>
-              <p>Safety expectations, hazard control, preparedness, and relevant coverage proof.</p>
-            </article>
-            <article>
-              <h3>Community Engagement</h3>
-              <p>Local participation, giving, partnerships, and authentic Alabama presence.</p>
-            </article>
-            <article>
-              <h3>Digital Trust</h3>
-              <p>Current website, consistent listings, responsive reviews, and understandable contact or payment flows.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section section--grid reveal" id="industries">
-          <div class="section-heading">
-            <p class="eyebrow">Who It Serves</p>
-            <h2>Best fit for businesses where trust drives conversion.</h2>
-          </div>
-          <div class="industry-layout">
-            <article class="industry-card">
-              <h3>Home Services</h3>
-              <p>HVAC, plumbing, electrical, roofing, cleaning, pest control, landscaping.</p>
-            </article>
-            <article class="industry-card">
-              <h3>Professional Firms</h3>
-              <p>Insurance agencies, accounting firms, real estate offices, mortgage teams, service-based practices.</p>
-            </article>
-            <article class="industry-card">
-              <h3>Retail and Hospitality</h3>
-              <p>Boutiques, salons, spas, gyms, restaurants, specialty shops that win on reputation.</p>
-            </article>
-            <article class="industry-card">
-              <h3>Community Businesses</h3>
-              <p>Childcare, senior support, family-owned brands, rural operators, and mission-driven local companies.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section reveal" id="assets">
-          <div class="section-heading">
-            <p class="eyebrow">Trust Assets</p>
-            <h2>What members can actually put to work after approval.</h2>
+            <p class="eyebrow">What Members Get</p>
+            <h2>Recognition assets built to support conversion.</h2>
           </div>
           <div class="asset-board">
             <span>Website badge</span>
@@ -266,131 +180,34 @@
             <span>Owner spotlight content</span>
             <span>AI-readable business summary</span>
           </div>
+          <div class="cta-row">
+            <a class="button" href="./founding-50.html">See the launch program</a>
+            <a class="button button--ghost" href="./apply.html">Start an application</a>
+          </div>
         </section>
 
-        <section class="section section--contrast reveal" id="pricing">
+        <section class="section reveal">
           <div class="section-heading">
-            <p class="eyebrow">Launch Pricing</p>
-            <h2>Simple annual tiers with room for expansion.</h2>
-            <p>Pricing is framed around trust signaling, local prestige, and conversion support rather than access alone.</p>
-          </div>
-          <div class="pricing-grid">
-            <article class="price-card">
-              <h3>Verified</h3>
-              <p class="price">$295<span>/year</span></p>
-              <p>Entry credential for businesses ready to formalize their public trust signal.</p>
-            </article>
-            <article class="price-card">
-              <h3>Trusted</h3>
-              <p class="price">$595<span>/year</span></p>
-              <p>Best for businesses that want a stronger conversion story and more marketable recognition.</p>
-            </article>
-            <article class="price-card">
-              <h3>Accredited</h3>
-              <p class="price">$1,250<span>/year</span></p>
-              <p>Built for operators who want deeper review, stronger proof, and higher-prestige positioning.</p>
-            </article>
-            <article class="price-card price-card--accent">
-              <h3>Gold Standard</h3>
-              <p class="price">$2,500<span>/year</span></p>
-              <p>Top-tier credential for standout businesses that want premium recognition and serious differentiation.</p>
-            </article>
-          </div>
-          <p class="pricing-note">
-            Optional add-ons can include enhanced profiles, rush review, multi-location support, printed certificate packs,
-            featured placement, and reputation improvement consulting.
-          </p>
-        </section>
-
-        <section class="section reveal" id="founding">
-          <div class="launch-banner">
-            <div>
-              <p class="eyebrow">Launch Program</p>
-              <h2>Applications are opening for the Founding 50 Alabama businesses.</h2>
-              <p>
-                The first cohort is designed for businesses that want early visibility, category leadership,
-                and a seat in shaping the trust mark before statewide expansion.
-              </p>
-            </div>
-            <div class="launch-banner__tags">
-              <span>Huntsville pilot cohort</span>
-              <span>Home services charter group</span>
-              <span>Main Street merchant launch</span>
-              <span>Family-owned spotlight</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--split reveal" id="apply">
-          <div class="section-heading">
-            <p class="eyebrow">Apply</p>
-            <h2>Start the review conversation.</h2>
+            <p class="eyebrow">Launch Structure</p>
+            <h2>The site is built to support the Founding 50 rollout.</h2>
             <p>
-              Founding applications are best for owner-operators, marketing leads, and operations leaders who
-              already care about reputation, standards, and local differentiation.
+              The first wave is designed for founder-led sales and high-trust categories, with
+              chamber partnerships, local business associations, and category-specific outreach.
             </p>
           </div>
-          <form class="apply-form">
-            <label>
-              Business name
-              <input type="text" name="business_name" placeholder="Your company name" />
-            </label>
-            <label>
-              Industry
-              <input type="text" name="industry" placeholder="HVAC, retail, insurance, childcare..." />
-            </label>
-            <label>
-              Contact email
-              <input type="email" name="email" placeholder="name@business.com" />
-            </label>
-            <label>
-              Target credential
-              <select name="tier">
-                <option>Verified</option>
-                <option>Trusted</option>
-                <option>Accredited</option>
-                <option>Gold Standard</option>
-              </select>
-            </label>
-            <label class="apply-form__full">
-              What makes your business a fit for AlaCred?
-              <textarea
-                name="message"
-                rows="5"
-                placeholder="Tell us about your reputation goals, market, and the proof points you already have in place."
-              ></textarea>
-            </label>
-            <div class="apply-form__actions">
-              <button class="button" type="submit">Request Review</button>
-              <a class="text-link" href="mailto:founding@alacred.com?subject=AlaCred%20Founding%20Application">
-                Or email founding@alacred.com
-              </a>
-            </div>
-          </form>
-        </section>
-
-        <section class="section reveal" id="faq">
-          <div class="section-heading">
-            <p class="eyebrow">FAQ</p>
-            <h2>Early answers for launch conversations.</h2>
-          </div>
-          <div class="faq-list">
-            <details>
-              <summary>Is AlaCred a directory, an award, or a membership?</summary>
-              <p>It is best understood as a standards-driven trust credential with public recognition and business visibility benefits layered on top.</p>
-            </details>
-            <details>
-              <summary>What kinds of evidence are reviewed?</summary>
-              <p>Evidence may include website screenshots, policy documents, contracts, reviews, training records, safety material, and operational proof.</p>
-            </details>
-            <details>
-              <summary>Who is it best suited for first?</summary>
-              <p>Reputation-sensitive local businesses where trust meaningfully affects conversion, including service businesses, professional firms, hospitality, and community-facing operators.</p>
-            </details>
-            <details>
-              <summary>Why does the Alabama angle matter?</summary>
-              <p>Local identity creates stronger affinity, better relevance, and a trust story national programs struggle to match.</p>
-            </details>
+          <div class="launch-grid">
+            <article class="launch-card">
+              <h3>Sales channels</h3>
+              <p>Chambers, Main Street groups, referral partners, founder-led outreach, sponsorships, and direct vertical targeting.</p>
+            </article>
+            <article class="launch-card">
+              <h3>Campaign angle</h3>
+              <p>Stand out beyond reviews alone. Turn trust into a marketable asset. Build stronger signals for your online presence.</p>
+            </article>
+            <article class="launch-card">
+              <h3>Pilot markets</h3>
+              <p>Huntsville pilot cohort, home services charter group, Main Street merchant launch, and family-owned business spotlight.</p>
+            </article>
           </div>
         </section>
       </main>
@@ -401,9 +218,9 @@
           <p>Alabama's trust mark for small business.</p>
         </div>
         <div>
-          <a href="#hero">Top</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#apply">Apply</a>
+          <a href="./about.html">About</a>
+          <a href="./credentials.html">Credentials</a>
+          <a href="./apply.html">Apply</a>
         </div>
         <p class="footer__meta">Designed for visible trust, stronger conversion, and better local credibility.</p>
       </footer>

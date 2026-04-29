@@ -3,6 +3,27 @@ const nav = document.querySelector(".topnav");
 const form = document.querySelector(".apply-form");
 const toast = document.querySelector(".toast");
 const revealItems = document.querySelectorAll(".reveal");
+const page = document.body.dataset.page;
+
+if (nav) {
+  nav.querySelectorAll("a").forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) return;
+    const activeMap = {
+      home: "./index.html",
+      about: "./about.html",
+      credentials: "./credentials.html",
+      standards: "./standards.html",
+      industries: "./industries.html",
+      founding: "./founding-50.html",
+      apply: "./apply.html",
+    };
+
+    if (activeMap[page] === href) {
+      link.classList.add("is-active");
+    }
+  });
+}
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
